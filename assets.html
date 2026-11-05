@@ -1,0 +1,11 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Assets — LineageIQ</title><meta name="description" content="The data asset catalog: tables, models and dashboards with health, freshness and lineage.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell page">
+  <header class="phead"><div class="eyebrow">Asset catalog</div><h1>Every <em>asset</em>.</h1><p class="lede">Health propagates downstream — a failing test on a raw table marks everything it feeds. Click any asset for its lineage graph.</p></header>
+  <div class="bigstats" id="summary"></div>
+  <div class="row" style="justify-content:space-between;margin-bottom:18px">
+    <label class="pill" style="gap:10px;cursor:text"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg><input id="q" placeholder="Search assets or owners…" style="background:none;border:none;outline:none;color:var(--ink);width:170px"></label>
+    <div class="seg" id="lseg"><button class="on" data-l="all">All</button><button data-l="raw">Raw</button><button data-l="staging">Staging</button><button data-l="mart">Mart</button><button data-l="bi">BI</button></div>
+  </div>
+  <div class="alist" id="alist"></div>
+</main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

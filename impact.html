@@ -1,0 +1,11 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Impact — LineageIQ</title><meta name="description" content="Pick an asset and see the full blast radius: every downstream table, dashboard and user affected.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell page">
+  <header class="phead"><div class="eyebrow">Impact analysis</div><h1>Before you <em>change it</em>.</h1><p class="lede" id="impdesc"></p>
+    <select class="inp" id="asel" style="max-width:360px;margin-top:16px"></select></header>
+  <div class="blast" id="blast"></div>
+  <div class="grid2">
+    <div class="card reveal" style="padding:24px"><div class="ch" style="padding:0 0 15px"><h2>Downstream, by layer</h2><span class="k">breadth-first</span></div><div id="implist" style="margin-top:16px"></div></div>
+    <div class="card reveal" style="padding:24px;align-self:start"><div class="ch" style="padding:0 0 10px"><h2>Summary</h2></div><div id="impkv" style="margin-top:8px"></div></div>
+  </div>
+</main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>

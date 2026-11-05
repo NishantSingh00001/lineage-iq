@@ -1,0 +1,15 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>Asset — LineageIQ</title><meta name="description" content="Asset detail: interactive lineage graph, columns, tests, freshness and incidents.">
+<link rel="stylesheet" href="core.css"><link rel="stylesheet" href="app.css"></head><body><div id="topbar"></div>
+<main class="shell page">
+  <header class="phead" style="padding-bottom:20px"><div class="eyebrow"><a href="assets.html" style="color:var(--mut)">← Assets</a></div><h1 id="aname" style="font-size:clamp(30px,4.6vw,52px)"></h1><p class="lede" id="ameta"></p><div id="atag" style="margin-top:14px"></div></header>
+  <div class="bigstats" id="astats"></div>
+  <div class="card reveal" style="padding:22px 24px;margin-bottom:22px"><div class="ch" style="padding:0 0 15px"><h2>Lineage</h2><span class="k"><b id="upcount" style="color:var(--acc)"></b> upstream · <b id="downcount" style="color:var(--acc)"></b> downstream</span></div>
+    <div class="lingraph"><div class="lincanvas" id="lincanvas"><svg class="linsvg" id="linsvg"></svg></div></div></div>
+  <div class="grid2" style="margin-bottom:22px">
+    <div class="card reveal" id="colsCard" style="padding:22px 24px"><div class="ch" style="padding:0 0 10px"><h2>Columns & tests</h2><span class="k">dbt-style</span></div><div id="cols" style="margin-top:8px"></div></div>
+    <div class="col">
+      <div class="card reveal" style="padding:22px 24px"><div class="ch" style="padding:0 0 12px"><h2>Freshness</h2><span class="k">last 14 runs</span></div><div class="freshbar" id="fresh" style="margin-top:14px"></div></div>
+      <div class="card reveal" style="padding:22px 24px"><div class="ch" style="padding:0 0 12px"><h2>Related incidents</h2><span class="k">this asset & neighbours</span></div><div id="aincs" style="margin-top:14px"></div></div>
+    </div>
+  </div>
+</main><script src="three.min.js"></script><script src="app.js"></script><script src="core.js"></script></body></html>
